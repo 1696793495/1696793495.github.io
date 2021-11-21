@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> TANG主页</title>
+    <!-- 外部样式<link>外部引用CSS必须在<head>部分 -->
+    <link rel="stylesheet" href="../thz/css/样式.css" />
+    <!-- 引入外部的js文件 -->
+    <script src="../thz/js/学习交互.js"></script>
+    <!-- style内嵌式样式，要写在head之间 -->
+    <!-- 因为style可以定义CSS也可以定义Javascript，type值为text/JavaScript
+    时，内部编写JavaScript的脚本 -->
+    <style type="text/css" title="字体14号">
+        div {
+            width: 200px;
+            height: 200px;
+            overflow: scroll;
+            border: solid 10px rgb(25, 0, 255);
+            padding: 20px;
+        }
+        
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CTRL+/可以快速注释 -->
+    <!-- b是加粗 -->
+    <h1 align="center" id="demo1">学习网页</h1>
+    <!-- 这是一级标题 -->
+    <!-- get方式提交表单可在地址栏获得看到，不安全。post方式不是通过地址栏传递 ，看不到，数据安全，常用。 -->
+    <form action="form_action.asp" method="post">
+        <fieldset>
+            <legend>填写区</legend>
+            <b>账号：</b><input type="text" value="默认是本段文字,最多8位" size="50" maxlength="8" readonly="readonly"><br />
+            <!-- value默认输入的内容，readonly是默认只读，不可修改 -->
+            <b>密码：</b><input type="password" name="userpwd" size="40"><br />
+            <!-- 设置name属性为的是以后提交给服务器，服务器能拿到对应的值。 -->
+            <b>网址：</b><input type="url" placeholder="以HTTP://开头"><br />
+            <!-- placeholder占位符提示 -->
+            <b>颜色：</b><input type="color"><br />
+            <!-- 设置name相同属性值是让男女互斥，只能选其中一个。checked="checked"默认选中。 -->
+            <!-- <label for=""></label>标注，使内容与表单元素关联起来，这里是点击文字也可以选中 -->
+            <b>性别：</b><input type="radio" name="sex" checked="checked" id="nan"><label for="nan">男</label>
+            <input type="radio" name="sex" id="nu"><label for="nu">女</label><br />
+            <!-- checkbox没有互斥特性,value值是选择的项，提交给服务器，服务器获得的值。如勾选唱，服务器接收的值是1 -->
+            <b>爱好：</b><input type="checkbox" name="aihao" value="1" checked="checked">唱
+            <input type="checkbox" name="aihao" value="2">跳
+            <input type="checkbox" name="aihao" value="3">rap
+            <input type="checkbox" name="aihao" value="4">篮球<br />
+            <b>上传文件：</b><input type="file"><br>
+            <b>电话</b>：<input type="tel" required pattern="^(\+86)?1\d{10}$"><br />
+            <!-- 下面是可选选择框 -->
+            <!-- <form action=""> -->
+            <!-- selected="selected" 设置select的默认选项，区别于checked="checked"-->
+            点开选择：<br />
+            <select name="" id="">
+                <option value="1">这是1条选项。</option>
+                <option value="2">这是2条选项。</option>
+                <option value="3" selected="selected">这是3条选项。</option>
+                <option value="4">这是4条选项。</option>
+            </select>
+            <!-- </form>    -->
+            <hr />
+            <!-- 下面是可输入和可选选择框 -->
+            直接输入或者点开选择：<br />
+            <input type="text" list="idsb">
+            <datalist id="idsb">
+                <option value="1这是主内容" label="1这是提示。"></option>
+                <option value="2这是主内容" label="2这是提示。"></option>
+                <option value="3这是主内容" label="3这是提示。"></option>
+                <option value="4这是主内容" label="4这是提示。"></option>
+            </datalist>
+            <br>
+            <input type="submit" value="确定" disabled="disabled" />
+            <!-- disabled单独html是不能实现点击的，要搭配JS逻辑判断。 -->
+            <input type="reset" />
+            <input type="button" value="模拟提交"><br>
+            <!-- 后期搭配JS做交互，JS实现操作行为 -->
+            <input type="image" src="images/icon/weixin.png" border=1px><br>
+            <!-- 后期搭配JS做交互 -->
+            <br />
+            <!-- reset回到初始状态，并非清空 -->
+        </fieldset>
+        <hr />
+        <!-- a超链接标签 -->
+        <a href="http://www.baidu.com">百度搜索</a>
+        <h4>能不能给我一首歌的时间-音乐</h4>
+        <audio src="sucai/给我一首歌的时间.mp3" controls autoplay></audio>
+        <!-- ul以下为无序列表 -->
+        <!-- style="list-style:none"去除前面的序号黑点符号 -->
+        <hr />
+        <h4>能不能给我一首歌的时间-视频</h4>
+        <video src="sucai/给我一首歌的时间.mp4" controls></video>
+        <hr />
+        <ul>
+            <!-- <ul style="list-style:none"> -->
+            <li>唐</li>
+            <li>不</li>
+            <li>苦</li>
+        </ul>
+        <!-- hr为水平分割线 -->
+        <hr />
+        <!-- ol以下为有序列表 -->
+        <ol>
+            <li>唐</li>
+            <li>不</li>
+            <li>苦</li>
+        </ol>
+        <!-- <div align="center" style="border: solid 3px #000;">测试</div> -->
+        <div>
+            <p>你好</p>
+        </div>
+        <hr />
+        <!-- table表格，属于高级选择器 -->
+        <table width="50%" border="1">
+            <tr>
+                <!-- tr是行 -->
+                <td colspan="2">唐</td>
+                <!-- td是列,colspan是跨列,rowspan是跨行 -->
+                <td>不</td>
+                <td rowspan="2">苦</td>
+            </tr>
+            <tr>
+                <td>真</td>
+                <td>的</td>
+                <td>帅</td>
+            </tr>
+        </table>
+        <hr />
+        <h3 align="center" style="border:1px solid tomato;">显示我</h3>
+
+
+    </form>
+</body>
+
+</html>
