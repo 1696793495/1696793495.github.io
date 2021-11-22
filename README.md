@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: 乔安の博客
-tagline: 我们从零开始，最终回归于零，上一段旅途的结束，正是下一段历程的开始。
+heroText: 唐不苦の时间轴
+tagline: 你必须内心丰富，才能摆脱生活表面上的相似。
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
