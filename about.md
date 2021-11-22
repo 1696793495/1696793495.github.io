@@ -13,9 +13,7 @@ title: 关于我
 
 5. 内容会在其他平台同步更新，感谢关注：B站up、微信公众号、QQ。
 
-   
-
-   <img type="image" src="https://1696793495.github.io//images/readme/bilibili.png" style="float: left; zoom: 50%;" /><img type="image" src="https://1696793495.github.io//images/readme/gongzhonghao.png" style="float: centre; zoom: 50%;" /><img type="image" src="https://1696793495.github.io//images/readme/qq.png" style="float: right; zoom: 50%;" />
+   <img type="image" src="https://1696793495.github.io//images/readme/bilibili.png" style="zoom: 50%;" /><img type="image" src="https://1696793495.github.io//images/readme/gongzhonghao.png" style=" zoom: 50%;" /><img type="image" src="https://1696793495.github.io//images/readme/qq.png" style=" zoom: 50%;" />
 
 <h2> 博客原作者 </h2>  
 
